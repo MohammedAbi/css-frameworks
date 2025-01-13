@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Authentication</title>
+    <title>Register</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-96">
-      <h1 class="text-2xl font-bold mb-6 text-center">Welcome</h1>
+      <h1 class="text-2xl font-bold mb-6 text-center">Register</h1>
       <form action="/profile" method="post" class="space-y-4">
+        <div class="block text-sm font-medium text-gray-700">
+          <label for="name">Name</label>
+          <input
+            type="email"
+            name="email"
+            minlength="8"
+            required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500"
+          />
+        </div>
         <div class="block text-sm font-medium text-gray-700">
           <label for="email">Email</label>
           <input
@@ -35,14 +45,14 @@
           type="submit"
           class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
-          Log In
+          Register
         </button>
       </form>
       <div class="text-center mt-4">
         <p class="text-sm text-gray-600">
-          Don't have an account?
-          <a href="./register/index.html" class="text-blue-500 hover:underline"
-            >Register</a
+          Already have an account?
+          <a href="../index.html" class="text-blue-500 hover:underline"
+            >Login</a
           >
         </p>
       </div>
