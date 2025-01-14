@@ -12,6 +12,79 @@
     />
   </head>
   <body class="bg-gray-100">
+    <header class="shadow mb-2 px-4 sticky top-0 z-10 bg-white">
+      <div
+        class="relative max-w-screen-lg mx-auto py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+      >
+        <a
+          href="/src/feed/index.html"
+          class="text-2xl flex items-center font-black"
+        >
+          <span class="mr-2 text-blue-600 text-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="24"
+              height="24"
+            >
+              <path
+                fill="#2563EB"
+                d="M493.7 .9L299.4 75.6l2.3-29.3c1-12.8-12.8-21.5-24-15.1L101.3 133.4C38.6 169.7 0 236.6 0 309C0 421.1 90.9 512 203 512c72.4 0 139.4-38.6 175.7-101.3L480.8 234.3c6.5-11.1-2.2-25-15.1-24l-29.3 2.3L511.1 18.3c.6-1.5 .9-3.2 .9-4.8C512 6 506 0 498.5 0c-1.7 0-3.3 .3-4.8 .9zM192 192a128 128 0 1 1 0 256 128 128 0 1 1 0-256zm0 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm16 96a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"
+              />
+            </svg>
+          </span>
+          <span class="text-blue-600">EchoPost</span>
+        </a>
+        <input class="peer hidden" type="checkbox" id="navbar-open" />
+        <label
+          class="sm:hidden cursor-pointer absolute right-0 mt-2 text-xl"
+          for="navbar-open"
+        >
+          <span class="sr-only">Toggle Navigation</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </label>
+        <nav
+          aria-label="Header Navigation"
+          class="peer-checked:block hidden sm:block py-4 sm:py-0"
+        >
+          <ul
+            class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 sm:items-center"
+          >
+            <li class="text-gray-600 hover:text-blue-600">
+              <a href="/src/index.html">Home</a>
+            </li>
+            <li class="text-gray-600 hover:text-blue-600">
+              <a href="/src/feed/index.html">Posts</a>
+            </li>
+            <li class="text-gray-600 hover:text-blue-600">
+              <a href="/src/profile/">Profile</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="/src/">
+                <button
+                  class="mt-2 sm:mt-0 rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+                >
+                  Login
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container mx-auto p-4">
       <h1 class="text-3xl font-bold mb-6">Feed</h1>
       <div class="flex flex-col sm:flex-row justify-between gap-4 mb-6">
@@ -64,17 +137,17 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
@@ -90,17 +163,17 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
@@ -116,17 +189,17 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
@@ -142,17 +215,17 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
@@ -168,17 +241,17 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
@@ -194,24 +267,111 @@
           <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
           <p class="mt-2">
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag1</span
             >
             <span
-              class="inline-block bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-blue-600 transition-colors"
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
               >tag2</span
             >
           </p>
           <div class="text-right mt-2">
             <button
-              class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 mt-2 w-full sm:w-auto"
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
             >
               Read More
             </button>
           </div>
         </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1721332153289-0c46dc38981b?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Post Thumbnail"
+            class="w-full h-48 object-cover rounded-md"
+          />
+          <h2 class="text-xl font-semibold mt-4">Lorem ipsum dolor sit.</h2>
+          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+          <p class="mt-2">
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag1</span
+            >
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag2</span
+            >
+          </p>
+          <div class="text-right mt-2">
+            <button
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1721332153289-0c46dc38981b?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Post Thumbnail"
+            class="w-full h-48 object-cover rounded-md"
+          />
+          <h2 class="text-xl font-semibold mt-4">Lorem ipsum dolor sit.</h2>
+          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+          <p class="mt-2">
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag1</span
+            >
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag2</span
+            >
+          </p>
+          <div class="text-right mt-2">
+            <button
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1721332153289-0c46dc38981b?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Post Thumbnail"
+            class="w-full h-48 object-cover rounded-md"
+          />
+          <h2 class="text-xl font-semibold mt-4">Lorem ipsum dolor sit.</h2>
+          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet.</p>
+          <p class="mt-2">
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag1</span
+            >
+            <span
+              class="inline-block bg-gray-500 text-white text-xs font-semibold py-1 px-3 rounded mr-2 mb-2 cursor-pointer hover:bg-gray-600 transition-colors"
+              >tag2</span
+            >
+          </p>
+          <div class="text-right mt-2">
+            <button
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+        
+
       </div>
-      <div class="mt-8">
+      <div class="text-center mt-6">
+        <button
+        class="rounded-md border-2 border-gray-600 px-6 py-1 font-medium text-gray-600 transition-colors hover:bg-gray-700 hover:text-white"
+        >
+          Load More posts
+        </button>
+      </div>
+      <div class="mt-8 sm:w-10/12 mx-auto">
         <h2 class="text-2xl font-bold mb-4">Create a New Post</h2>
         <form class="space-y-4">
           <input
