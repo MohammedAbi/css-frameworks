@@ -1,5 +1,8 @@
 # Social Media App
 
+![Skjermbilde 2025-01-14 kl  22 13 35](https://github.com/user-attachments/assets/35d23812-953c-46aa-a719-9a8ddbd25cbc)
+*This image showcases the interface of a social media application, featuring a clean layout with highlighted posts and an intuitive user experience.*
+
 This is a social media application built using **TailwindCSS** for styling. It includes three main pages: Authentication, Feed, and Profile. The app is designed with responsive UI and follows best practices for frontend development.
 
 ## Features
@@ -88,10 +91,6 @@ http://localhost:3000
 ```
 
 The app will be accessible from there.
-
-## Screenshots
-
-Include any relevant screenshots of your pages for visual reference (optional).
 
 ## Credits
 
