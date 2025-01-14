@@ -50,9 +50,9 @@ Ensure you have the following tools installed on your machine:
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/social-media-app.git
+git clone https://github.com/your-username/css-frameworks.git
 
-cd social-media-app
+cd css-frameworks
 ```
 
 #### 2. Install Dependencies
